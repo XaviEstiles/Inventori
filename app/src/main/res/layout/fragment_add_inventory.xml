@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btOk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.AddInventoryFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCraeted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tvCreated"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edCreated"
+        android:contentDescription="@string/contentDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="date"
+        android:lines="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvCraeted"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvActivated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tvActivated"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvCraeted" />
+
+    <EditText
+        android:id="@+id/edActivated"
+        android:contentDescription="@string/contentDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="date"
+        android:lines="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvActivated"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvEnded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tvEnded"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivated" />
+
+    <EditText
+        android:id="@+id/edEnded"
+        android:contentDescription="@string/contentDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="date"
+        android:lines="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvEnded"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tvEdit"
+        app:layout_constraintStart_toStartOf="@+id/gdlStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvEnded" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEdit"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <Switch
+        android:id="@+id/swEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvEdit"
+        app:layout_constraintEnd_toStartOf="@+id/gdlEnd"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="tvCraeted,tvActivated,tvEnded,tvEdit"
+        tools:layout_editor_absoluteX="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

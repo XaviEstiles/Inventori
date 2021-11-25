@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="splash_tvName_marginBottom">200dp</dimen>
+    <dimen name="splash_tvName_textSize">48sp</dimen>
+    <dimen name="tvLogin_marginBottom">10dp</dimen>
+    <dimen name="tvLogin_marginTop">50dp</dimen>
+    <dimen name="til_margin">3dp</dimen>
+    <dimen name="btnLogin_width">150dp</dimen>
+    <dimen name="cbBnt_marginBottom">20dp</dimen>
+    <dimen name="title_sizeText">40sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fabAdd">6dp</dimen>
+    <dimen name="dashboard_fragment_HeightView">20dp</dimen>
+    <dimen name="dashboard_fragment_widthView">20dp</dimen>
+    <dimen name="dashboard_fragment_tlPadding">20dp</dimen>
+</resources>

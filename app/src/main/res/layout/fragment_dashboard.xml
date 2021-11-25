@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashBoardFragment"
+    android:stretchColumns="0,1"
+    android:gravity="center"
+    android:padding="@dimen/dashboard_fragment_tlPadding">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imgBtInventory"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/inventori"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <ImageButton
+            android:id="@+id/imgBtDependency"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dependencias"
+            tools:ignore="ImageContrastCheck" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="@dimen/dashboard_fragment_widthView"
+            android:layout_height="@dimen/dashboard_fragment_HeightView"
+            android:layout_span="2"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageButton
+            android:id="@+id/imgBtSector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sectores"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <ImageButton
+            android:id="@+id/imgBtProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/product"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="@dimen/dashboard_fragment_widthView"
+            android:layout_height="@dimen/dashboard_fragment_HeightView"
+            android:layout_span="2"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageButton
+            android:id="@+id/imgBtSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ajustes"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <ImageButton
+            android:id="@+id/imgBtAboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aboutme"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+    </TableRow>
+</TableLayout>

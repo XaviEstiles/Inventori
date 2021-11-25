@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashBoardFragment">
+    <fragment
+        android:id="@+id/dependenciasListFragment"
+        android:name="com.example.inventori.ui.dependencias.DependenciasListFragment"
+        android:label="fragment_dependencias_list"
+        tools:layout="@layout/fragment_dependencias_list" />
+    <fragment
+        android:id="@+id/addInventoryFragment"
+        android:name="com.example.inventori.ui.dashboard.AddInventoryFragment"
+        android:label="fragment_add_inventory"
+        tools:layout="@layout/fragment_add_inventory" />
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.inventori.ui.dashboard.DashBoardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashBoardFragment_to_addInventoryFragment"
+            app:destination="@id/addInventoryFragment" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_dependenciasListFragment"
+            app:destination="@id/dependenciasListFragment" />
+    </fragment>
+</navigation>

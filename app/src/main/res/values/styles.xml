@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HintTextAppareaces">
+        <item name="boxStrokeColor">@color/colorSecondary</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="android:background">@drawable/shape_textinputlayout</item>
+        <item name="hintTextColor">@color/colorSecondary</item>
+        <item name="boxBackgroundMode">filled</item>
+    </style>
+    <style name="TextInputLayoutSingUp" parent="HintTextAppareaces">
+        <item name="android:background">@null</item>
+    </style>
+</resources>

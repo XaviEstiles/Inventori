@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "402196676017",
+    "project_id": "inventory-be34b",
+    "storage_bucket": "inventory-be34b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402196676017:android:e9a0953e1e696d2d525190",
+        "android_client_info": {
+          "package_name": "com.example.inventori"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402196676017-4ece6df1ruvvug3qs3sfb2n6nth8qvuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOVC34uyRKJkcBtMZV96b3LoWP8UZS7Pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402196676017-4ece6df1ruvvug3qs3sfb2n6nth8qvuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
